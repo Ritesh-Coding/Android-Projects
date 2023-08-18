@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg"
+    tools:context=".MainActivity">
+
+
+    <LinearLayout
+        android:id="@+id/MainLayout"
+        android:layout_width="360dp"
+        android:layout_height="413dp"
+        android:layout_gravity="center"
+        android:background="@drawable/white_round_shape"
+        android:orientation="vertical"
+        android:paddingBottom="3dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.5">
+
+        <ImageView
+            android:id="@+id/userProfilePic"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="30dp"
+            android:src="@drawable/kb"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <LinearLayout
+            android:id="@+id/userNameLayout"
+            android:layout_width="400dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="15dp"
+            android:gravity="center"
+            android:orientation="horizontal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/userProfilePic">
+
+            <TextView
+                android:id="@+id/userTitleT"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="5dp"
+                android:text="Mr."
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/firstNameT"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="5dp"
+                android:text="Khalil"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/lastNameT"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:text="Ahmad"
+                android:textSize="15sp" />
+        </LinearLayout>
+        <!--        here add other user details-->
+        <TextView
+            android:id="@+id/GenderT"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Gender"
+            android:textAlignment="center" />
+
+        <TextView
+            android:id="@+id/EmailT"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Email"
+            android:textAlignment="center" />
+
+        <TextView
+            android:id="@+id/PhoneT"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Phone Number"
+            android:textAlignment="center" />
+
+        <TextView
+            android:id="@+id/CellT"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Cell Number"
+            android:textAlignment="center" />
+
+        <TextView
+            android:id="@+id/CityT"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="City"
+            android:textAlignment="center" />
+
+        <TextView
+            android:id="@+id/StateT"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="State"
+            android:textAlignment="center" />
+
+        <TextView
+            android:id="@+id/CountryT"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Country"
+            android:textAlignment="center" />
+
+        <!--        <pl.droidsonroids.gif.GifImageView-->
+        <!--            android:layout_width="wrap_content"-->
+        <!--            android:layout_height="60dp"-->
+        <!--            android:layout_gravity="center"-->
+        <!--            android:src="@drawable/gig" />-->
+
+
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+

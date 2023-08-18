@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+<!--    tools:showIn="navigation_view">-->
+<!--    By removing this you will get another activity view-->
+
+    <group android:checkableBehavior="single">
+<!--group:-it means that when you click on the button you will get the info that you clicked by it's highlight-->
+        <item
+            android:id="@+id/nav_home"
+            android:icon="@drawable/abpnews"
+            android:title="@string/abp_news"
+            android:label="Abp News"
+            />
+        <item
+            android:id="@+id/nav_gallery"
+            android:icon="@drawable/news24_final"
+            android:title="@string/news24"
+            android:label="News 24"/>
+        <item
+            android:id="@+id/nav_slideshow"
+            android:icon="@drawable/img_4"
+            android:title="@string/news18"
+            android:label="News 18"/>
+<!--        note id should be same as given in the mobile navigation-->
+        <item
+            android:id="@+id/BBC_FragmentFragment"
+
+            android:icon="@drawable/img_5"
+            android:title="BBC News"
+            android:label="BBC News"
+ />
+        <item
+            android:id="@+id/foxFragment"
+            android:icon="@drawable/img_6"
+
+
+            android:title="Fox news"
+            android:label="Fox news"/>
+        <item
+            android:id="@+id/zeeFragment"
+            android:icon="@drawable/img_7"
+            android:title="Zee news"
+            android:label="Zee News"/>
+
+    </group>
+    <item android:title="Upcoming">
+        <menu>
+            <item
+                android:id="@+id/news18"
+                android:icon="@drawable/img_8"
+                android:title="Tv9 Gujarati" />
+
+        </menu>
+    </item>
+
+
+
+
+</menu>

@@ -1,0 +1,386 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity2">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/card1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="10dp"
+                app:cardCornerRadius="5dp"
+                android:layout_marginRight="10dp"
+                app:cardUseCompatPadding="true">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="20dp"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:id="@+id/user"
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:layout_gravity="left"
+                            android:layout_marginLeft="20dp"
+                            app:srcCompat="@drawable/ic_baseline_face_24">
+                        </ImageView>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="20dp"
+                            android:text="Ritesh"
+                            android:textSize="25dp"
+                            android:textStyle="bold"/>
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:text="Seriously,can sometime tell @lvan to stop talking about
+                   comic sans.it's getting annoying..."
+                        android:textSize="15dp"
+                        android:textStyle="normal"/>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal"
+                        android:layout_marginTop="16dp">
+
+                        <ImageView
+                            android:id="@+id/message"
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:layout_gravity="left"
+                            android:layout_marginLeft="30dp"
+                            app:srcCompat="@drawable/ic_baseline_message_24">
+                        </ImageView>
+
+                        <ImageView
+                            android:id="@+id/save"
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:layout_gravity="left"
+                            android:layout_marginLeft="80dp"
+
+                            app:srcCompat="@drawable/ic_baseline_save_24">
+                        </ImageView>
+
+                        <ImageView
+                            android:id="@+id/share"
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:layout_gravity="left"
+                            android:layout_marginLeft="90dp"
+
+                            app:srcCompat="@drawable/ic_baseline_share_24">
+                        </ImageView>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/card2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="10dp"
+                app:cardCornerRadius="5dp"
+                android:layout_marginRight="10dp"
+                app:cardUseCompatPadding="true">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="20dp"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:id="@+id/user1"
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:layout_gravity="left"
+                            android:layout_marginLeft="20dp"
+                            app:srcCompat="@drawable/ic_baseline_face_24">
+                        </ImageView>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="20dp"
+                            android:text="Aryan"
+                            android:textSize="25dp"
+                            android:textStyle="bold"/>
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:text="Hello Aryan... How are you?"
+                        android:textSize="15dp"
+                        android:textStyle="normal"/>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal"
+                        android:layout_marginTop="16dp">
+
+                        <ImageView
+                            android:id="@+id/message1"
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:layout_gravity="left"
+                            android:layout_marginLeft="30dp"
+                            app:srcCompat="@drawable/ic_baseline_message_24">
+                        </ImageView>
+
+                        <ImageView
+                            android:id="@+id/save1"
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:layout_gravity="left"
+                            android:layout_marginLeft="80dp"
+
+                            app:srcCompat="@drawable/ic_baseline_save_24">
+                        </ImageView>
+
+                        <ImageView
+                            android:id="@+id/share1"
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:layout_gravity="left"
+                            android:layout_marginLeft="90dp"
+
+                            app:srcCompat="@drawable/ic_baseline_share_24">
+                        </ImageView>
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/card3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="10dp"
+                app:cardCornerRadius="5dp"
+                android:layout_marginRight="10dp"
+                app:cardUseCompatPadding="true">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="20dp"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:id="@+id/user2"
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:layout_gravity="left"
+                            android:layout_marginLeft="20dp"
+                            app:srcCompat="@drawable/ic_baseline_face_24">
+                        </ImageView>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="20dp"
+                            android:text="Aman"
+                            android:textSize="25dp"
+                            android:textStyle="bold"/>
+                    </LinearLayout>
+
+                    <ImageView
+                        android:layout_width="250dp"
+                        android:layout_height="150dp"
+                        android:layout_gravity="center"
+                        android:adjustViewBounds="true"
+                        android:scaleType="fitXY"
+                        app:srcCompat="@drawable/peacock">
+
+                    </ImageView>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal"
+                        android:layout_marginTop="16dp">
+
+                        <ImageView
+                            android:id="@+id/message2"
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:layout_gravity="left"
+                            android:layout_marginLeft="30dp"
+                            app:srcCompat="@drawable/ic_baseline_message_24">
+                        </ImageView>
+
+                        <ImageView
+                            android:id="@+id/save2"
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:layout_gravity="left"
+                            android:layout_marginLeft="80dp"
+
+                            app:srcCompat="@drawable/ic_baseline_save_24">
+                        </ImageView>
+
+                        <ImageView
+                            android:id="@+id/share2"
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:layout_gravity="left"
+                            android:layout_marginLeft="90dp"
+
+                            app:srcCompat="@drawable/ic_baseline_share_24">
+                        </ImageView>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/card3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="10dp"
+                app:cardCornerRadius="5dp"
+                android:layout_marginRight="10dp"
+                app:cardUseCompatPadding="true">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="20dp"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:id="@+id/user3"
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:layout_gravity="left"
+                            android:layout_marginLeft="20dp"
+                            app:srcCompat="@drawable/ic_baseline_face_24">
+                        </ImageView>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="20dp"
+                            android:text="Farhan"
+                            android:textSize="25dp"
+                            android:textStyle="bold"/>
+                    </LinearLayout>
+
+                    <ImageView
+                        android:layout_width="250dp"
+                        android:layout_height="150dp"
+                        android:layout_gravity="center"
+                        android:adjustViewBounds="true"
+                        android:scaleType="fitXY"
+                        app:srcCompat="@drawable/nature">
+
+                    </ImageView>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal"
+                        android:layout_marginTop="16dp">
+
+                        <ImageView
+                            android:id="@+id/message3"
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:layout_gravity="left"
+                            android:layout_marginLeft="30dp"
+                            app:srcCompat="@drawable/ic_baseline_message_24">
+                        </ImageView>
+
+                        <ImageView
+                            android:id="@+id/save3"
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:layout_gravity="left"
+                            android:layout_marginLeft="80dp"
+
+                            app:srcCompat="@drawable/ic_baseline_save_24">
+                        </ImageView>
+
+                        <ImageView
+                            android:id="@+id/share3"
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:layout_gravity="left"
+                            android:layout_marginLeft="90dp"
+
+                            app:srcCompat="@drawable/ic_baseline_share_24">
+                        </ImageView>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+
+
+        </LinearLayout>
+
+
+
+    </ScrollView>
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

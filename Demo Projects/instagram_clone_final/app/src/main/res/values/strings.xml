@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">instagram_clone_final</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+    <string name="textview">Instagram</string>
+    <string name="camera">Camera</string>
+    <string name="ig_tv">IG_tv</string>
+    <string name="send">send</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="50dp">
+
+    <ImageView
+        android:id="@+id/user_image"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_marginTop="1dp"
+        android:scaleType="fitCenter"
+
+        app:layout_constraintBottom_toTopOf="@+id/tvemail"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+
+        app:layout_constraintStart_toStartOf="parent"
+
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.166" />
+
+    <TextView
+        android:id="@+id/tvDIid"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="565665"
+        android:layout_marginStart="12dp"
+        android:layout_marginEnd="300dp"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginBottom="190dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="16dp" />
+
+    <TextView
+        android:id="@+id/tvfitstname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/tvlastname"
+        android:layout_marginStart="60dp"
+        app:layout_constraintTop_toBottomOf="@id/user_image"
+        android:textSize="30dp"
+        android:text="Ritesh"
+        app:layout_constraintBottom_toTopOf="@+id/tvemail"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:layout_marginTop="5dp">
+    </TextView>
+    <TextView
+        android:id="@+id/tvlastname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toEndOf="@id/tvfitstname"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/user_image"
+        android:layout_marginEnd="60dp"
+        android:textSize="30dp"
+        android:text="Jaiswal"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:layout_marginTop="5dp">
+    </TextView>
+
+
+    <TextView
+        android:id="@+id/tvemail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvfitstname"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:textSize="25dp"
+        android:text="riteshjaiswala@gmail.com"
+        app:layout_goneMarginTop="20dp"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:layout_marginTop="5dp">
+    </TextView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
