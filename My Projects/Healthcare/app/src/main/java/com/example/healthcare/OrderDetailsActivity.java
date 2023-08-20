@@ -80,7 +80,10 @@ public class OrderDetailsActivity extends AppCompatActivity {
     @Override
     public void onBackPressed() {
         super.onBackPressed();
-        startActivity(new Intent(OrderDetailsActivity.this, HomeActivity.class));
-        finish();
+        Intent intent = new Intent(this, HomeActivity.class);
+        intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK|Intent.FLAG_ACTIVITY_NEW_TASK);
+        this.startActivity(intent);
+//        startActivity(new Intent(OrderDetailsActivity.this, HomeActivity.class));
+//        finish();
     }
 }

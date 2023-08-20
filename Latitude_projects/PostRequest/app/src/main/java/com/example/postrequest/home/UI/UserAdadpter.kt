@@ -53,7 +53,7 @@ class UserAdadpter(var listner: HomeListener,var context: Context) : RecyclerVie
 
             builder.setMessage("Are you sure You want to delete?")
 
-            builder.setTitle("Alert !")
+            builder.setTitle("Confirm Deletion")
 
             builder.setCancelable(false)
 

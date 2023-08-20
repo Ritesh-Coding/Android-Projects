@@ -5,6 +5,7 @@ import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
 import com.bumptech.glide.Glide
 import com.example.random_details2.databinding.AdapterMovieBinding
+import com.example.random_details2.databinding.AdapterUserBinding
 
 class UserAdadpter : RecyclerView.Adapter<MainViewHolder>() {
 
@@ -17,7 +18,7 @@ class UserAdadpter : RecyclerView.Adapter<MainViewHolder>() {
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): MainViewHolder {
         val inflater = LayoutInflater.from(parent.context)
-        val binding = AdapterMovieBinding.inflate(inflater, parent, false)
+        val binding = AdapterUserBinding.inflate(inflater, parent, false)
         return MainViewHolder(binding)
     }
 
@@ -36,6 +37,6 @@ class UserAdadpter : RecyclerView.Adapter<MainViewHolder>() {
     }
 }
 
-class MainViewHolder(val binding: AdapterMovieBinding) : RecyclerView.ViewHolder(binding.root) {
+class MainViewHolder(val binding: AdapterUserBinding) : RecyclerView.ViewHolder(binding.root) {
 // This class represents the ViewHolder for each item in the RecyclerView. It takes an AdapterMovieBinding object as a parameter, which is used to access the views in the movie item layout (adapter_movie.xml).
 }

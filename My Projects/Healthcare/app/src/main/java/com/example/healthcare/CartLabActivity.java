@@ -175,8 +175,11 @@ public class CartLabActivity extends AppCompatActivity {
     @Override
     public void onBackPressed() {
         super.onBackPressed();
-        startActivity(new Intent(CartLabActivity.this, LabTestActivity.class));
-        finish();
+        Intent intent = new Intent(this, LabTestActivity.class);
+        intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK|Intent.FLAG_ACTIVITY_NEW_TASK);
+        this.startActivity(intent);
+//        startActivity(new Intent(CartLabActivity.this, LabTestActivity.class));
+//        finish();
 
     }
 

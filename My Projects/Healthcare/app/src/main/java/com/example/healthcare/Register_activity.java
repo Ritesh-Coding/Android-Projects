@@ -122,8 +122,11 @@ public class Register_activity extends AppCompatActivity {
     public void onBackPressed()
     {
         super.onBackPressed();
-        startActivity(new Intent(Register_activity.this, LoginActivity.class));
-        finish();
+        Intent intent = new Intent(this, LoginActivity.class);
+        intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK|Intent.FLAG_ACTIVITY_NEW_TASK);
+        this.startActivity(intent);
+//        startActivity(new Intent(Register_activity.this, LoginActivity.class));
+//        finish();
 
     }
 }

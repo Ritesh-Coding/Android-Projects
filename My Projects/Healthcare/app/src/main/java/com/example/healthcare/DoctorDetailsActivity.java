@@ -134,8 +134,11 @@ public class DoctorDetailsActivity extends AppCompatActivity {
     public void onBackPressed()
     {
         super.onBackPressed();
-        startActivity(new Intent(DoctorDetailsActivity.this, FindDoctorActivity.class));
-        finish();
+        Intent intent = new Intent(this, FindDoctorActivity.class);
+        intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK|Intent.FLAG_ACTIVITY_NEW_TASK);
+        this.startActivity(intent);
+//        startActivity(new Intent(DoctorDetailsActivity.this, FindDoctorActivity.class));
+//        finish();
 
     }
 }

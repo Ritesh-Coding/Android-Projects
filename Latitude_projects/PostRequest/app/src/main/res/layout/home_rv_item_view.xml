@@ -2,18 +2,17 @@
 <androidx.cardview.widget.CardView xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:layout_marginStart="5dp"
-    android:layout_marginTop="5dp"
-    android:layout_marginEnd="5dp"
+    android:layout_margin="10dp"
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/black"
     >
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginBottom="10dp"
-        android:background="@android:color/darker_gray"
+        android:background="@drawable/img"
 
         android:padding="10dp">
         <TextView
@@ -68,8 +67,8 @@
             android:layout_marginBottom="20dp"
             android:text="MYname"
 
-            android:layout_marginEnd="30dp"
-            android:layout_marginStart="30dp"
+            android:layout_marginEnd="56dp"
+            android:layout_marginStart="10dp"
             android:textColor="@android:color/black"
 
             android:textSize="16sp"
@@ -90,7 +89,7 @@
             android:src="@drawable/baseline_delete_24"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            android:layout_marginTop="5dp"
+            android:layout_marginTop="6dp"
             app:layout_constraintStart_toEndOf="@+id/tv_title"
             app:layout_constraintTop_toTopOf="parent" />
 
@@ -101,11 +100,11 @@
             android:id="@+id/user_body"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="20dp"
+
             android:textColor="@android:color/black"
             android:text="mname"
-            android:layout_marginStart="30dp"
-            android:layout_marginEnd="30dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="56dp"
             android:textSize="16sp"
             android:textStyle="normal"
             app:layout_constraintBottom_toBottomOf="parent"

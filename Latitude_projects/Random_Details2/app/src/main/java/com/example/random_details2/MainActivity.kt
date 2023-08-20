@@ -46,7 +46,7 @@ class MainActivity : AppCompatActivity() {
 
         if (isNetwork(getApplicationContext())){
 
-            Toast.makeText(getApplicationContext(), "Internet Connected", Toast.LENGTH_SHORT).show()
+//            Toast.makeText(getApplicationContext(), "Internet Connected", Toast.LENGTH_SHORT).show()
             viewModel.getAllMovies()
         } else {
 

@@ -146,8 +146,11 @@ public class CartBuyMedicineActivity extends AppCompatActivity {
     @Override
     public void onBackPressed() {
         super.onBackPressed();
-        startActivity(new Intent(CartBuyMedicineActivity.this, HomeActivity.class));
-        finish();
+        Intent intent = new Intent(this, HomeActivity.class);
+        intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK|Intent.FLAG_ACTIVITY_NEW_TASK);
+        this.startActivity(intent);
+//        startActivity(new Intent(CartBuyMedicineActivity.this, HomeActivity.class));
+//        finish();
 
     }
 

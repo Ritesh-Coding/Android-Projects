@@ -78,7 +78,7 @@ class MainActivity : AppCompatActivity(),UserAdadpter.HomeListener{
                     if (it!=null){
                         adapter.addData(postModel)
                         viewModel.createPost(postModel)
-                       // binding.recyclerview.smoothScrollToPosition(0)
+                        binding.recyclerview.smoothScrollToPosition(0)
                         Toast.makeText(this,"post added",Toast.LENGTH_SHORT).show()
                     }else{
                         Toast.makeText(this.applicationContext,"Cannot create post at the moment",Toast.LENGTH_SHORT).show()
